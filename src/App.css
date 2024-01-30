@@ -1,0 +1,40 @@
+body {
+    word-wrap: break-word;
+}
+
+/* Shimmer effect for the card */
+
+.shimmer-card {
+    animation: shimmer 1.5s infinite;
+    background: linear-gradient(-90deg, #f1f1f1 25%, #e9e9e9 50%, #f1f1f1 75%);
+    background-size: 400% 400%;
+    border-radius: 4px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+/* VideoPage Component */
+
+.aspect-ratio-16-9 {
+    position: relative;
+    /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.aspect-ratio-object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
