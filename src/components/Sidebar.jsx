@@ -16,7 +16,7 @@ const Sidebar = () => {
     return (
         <>
             {isSidebarVisible && (
-                <div className='min-w-56 mr-6'>
+                <div className='min-w-56 mr-6 overlay_sidebar'>
                     <ul>
                         {menus.map((menu) => <SideMenu
                             key={menu.id}

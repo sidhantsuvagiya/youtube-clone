@@ -49,42 +49,42 @@ const menus = [
         id: 1,
         name: "Home",
         path: "/",
-        src: "./images/home.svg",
+        src: "/images/home.svg",
         alt: "home"
     },
     {
         id: 2,
         name: "Movies",
         path: "/category/movies",
-        src: "./images/movies.svg",
+        src: "/images/movies.svg",
         alt: "movies"
     },
     {
         id: 3,
         name: "Music",
         path: "/category/music",
-        src: "./images/music.svg",
+        src: "/images/music.svg",
         alt: "music"
     },
     {
         id: 4,
         name: "Sports",
         path: "/category/sports",
-        src: "./images/sports.svg",
+        src: "/images/sports.svg",
         alt: "sports"
     },
     {
         id: 5,
         name: "Gaming",
         path: "/category/gaming",
-        src: "./images/gaming.svg",
+        src: "/images/gaming.svg",
         alt: "gaming"
     },
     {
         id: 6,
         name: "News",
         path: "/category/news",
-        src: "./images/news.svg",
+        src: "/images/news.svg",
         alt: "news"
     }
 ]

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='w-full max-w-screen-2xl mx-auto px-6 font-roboto'>
+      <div className='w-full max-w-screen-2xl mx-auto px-3 md:px-6 font-roboto'>
         <Navbar />
         <div className='flex'>
           <Sidebar />

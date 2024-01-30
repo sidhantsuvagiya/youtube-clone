@@ -24,7 +24,7 @@ export const VideoCard = ({ videoId, title, channelTitle, publishedAt, thumbnail
                         <img className='w-full bg-contain rounded-xl' src={thumbnail} alt="video" />
                     </div>
                     <div className='flex mt-3'>
-                        <img className='w-9 h-9 rounded-full mr-3' src="images/user.svg" alt="user" />
+                        <img className='w-9 h-9 rounded-full mr-3' src="/images/user.svg" alt="user" />
                         <div>
                             <p className='text-base line-clamp-2 font-medium mb-0.5'>{title}</p>
                             <p className='text-sm text-gray-600'>
