@@ -20,7 +20,7 @@ const VideoPage = () => {
 
     const fetchSingleVideo = async () => {
         try {
-            const baseUrl = import.meta.env.VITE_YOUTUBE_SINGLE_VIDEO_API + videoId;
+            const baseUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&type=video&key=${import.meta.env.VITE_YOUTUBE_API_KEY}&id=${videoId}`;
             const response = await fetch(baseUrl);
             const apiData = await response.json();
             if (apiData) {
@@ -48,7 +48,7 @@ const VideoPage = () => {
 
             <div className='bg-gray-100 px-5 py-4 rounded-xl'>
                 <p className='font-medium'>
-                {formattedViews} views {timeAgo}
+                    {formattedViews} views {timeAgo}
                 </p>
                 <ShowMoreText text={currentVideo?.snippet?.localized?.description} />
             </div>

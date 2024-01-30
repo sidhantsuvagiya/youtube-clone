@@ -26,7 +26,7 @@ const Home = () => {
     const getPopularVideos = async (categoryID) => {
         try {
             dispatch(toggleLoading(true))
-            const baseUrl = import.meta.env.VITE_YOUTUBE_MOST_POPULAR_VIDEOS_API + categoryID;
+            const baseUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&type=video&chart=mostPopular&maxResults=6&key=${import.meta.env.VITE_YOUTUBE_API_KEY}&videoCategoryId=${categoryID}`;
             const response = await fetch(baseUrl);
             const apiData = await response.json();
             dispatch(setVideos(apiData.items))

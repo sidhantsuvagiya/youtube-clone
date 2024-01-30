@@ -9,7 +9,7 @@ const CommnetSection = ({ videoId, commentCount }) => {
 
   const getVideoComments = async () => {
     try {
-      const baseUrl = import.meta.env.VITE_YOUTUBE_COMMENTS_API + videoId;
+      const baseUrl = `https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&key=${import.meta.env.VITE_YOUTUBE_API_KEY}&videoId=${videoId}`;
       const response = await fetch(baseUrl);
       const apiData = await response.json();
       setCommentList(apiData?.items)

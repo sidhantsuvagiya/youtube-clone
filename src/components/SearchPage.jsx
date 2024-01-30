@@ -15,7 +15,7 @@ const SearchPage = () => {
     const getSearchVideos = async () => {
         try {
             dispatch(toggleLoading(true))
-            const baseUrl = import.meta.env.VITE_YOUTUBE_SEARCH_API;
+            const baseUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&type=video&key=${import.meta.env.VITE_YOUTUBE_API_KEY}&q=`;
             const response = await fetch(baseUrl + searchValue)
             const apiData = await response.json()
             dispatch(setVideos(apiData.items))
