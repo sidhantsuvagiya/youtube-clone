@@ -1,5 +1,6 @@
 {
   "name": "youtube-clone",
+  "homepage": "https://youtube123.vercel.app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
