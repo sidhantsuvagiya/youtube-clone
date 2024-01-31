@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import YoutubeComment from "./YoutubeComment";
 
 const CommnetSection = ({ videoId, commentCount }) => {
