@@ -9,10 +9,11 @@ const YoutubeComment = ({ comment }) => {
   const timeAgo = useMemo(() => getTimeAgo(publishedAt), [publishedAt])
 
   return (
-    <div className="flex border-b py-3">
+    <div className="flex border-t py-3">
       <img
         src={authorProfileImageUrl}
         className="w-10 h-10 rounded-full mr-4"
+        onError={(e) => e.target.src = "/images/user.svg"}
       />
       <div>
         <strong>{authorDisplayName}</strong> <small className='text-gray-900'>{timeAgo}</small>

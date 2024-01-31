@@ -37,7 +37,7 @@ const VideoPage = () => {
     console.log(currentVideo);
 
     return (
-        <div className='w-[640px] h-[360px]'>
+        <div className='max-w-[640px] aspect-video'>
             <iframe
                 className="w-full h-full rounded-xl"
                 src={`https://www.youtube.com/embed/${videoId}`}
